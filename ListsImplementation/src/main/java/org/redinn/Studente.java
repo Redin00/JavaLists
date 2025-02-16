@@ -31,8 +31,6 @@ public class Studente {
     // Stampa le informazioni sullo studente in modo formattato
     public void StampaInformazioni(){
 
-        // Pattern per mostrare il voto (che è di tipo double) con solo 2 cifre decimali
-
         System.out.println("Nome: " + nome + " Cognome: " + cognome + " | " + "Voto: " + voto);
     }
 
