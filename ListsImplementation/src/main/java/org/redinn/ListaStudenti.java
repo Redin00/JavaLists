@@ -94,6 +94,7 @@ public class ListaStudenti
         // Se la lista è vuota, inseriamo i dati senza sfruttare controlli e cicli vari
         if(head == null){
             head = new Nodo(dati);
+            nElementi++;
             return;
         }
 
@@ -126,6 +127,7 @@ public class ListaStudenti
 
         if(index == 0){
             head = head.getLink();
+            nElementi--;
             return;
         }
 
@@ -138,6 +140,7 @@ public class ListaStudenti
         }
 
         c.setLink(d.getLink());
+        nElementi--;
 
     }
 
@@ -218,6 +221,7 @@ public class ListaStudenti
         if(head != null){
             head.setLink(null);
             head = null;
+            nElementi = 0;
         }
 
     }
